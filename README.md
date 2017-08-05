@@ -67,9 +67,6 @@ Settings → Plugins → Browse repositories，搜索插件名然后安装。
 
 *****
 
-### lint-cleaner-plugin
-### 删除未使用的资源,包括strings.xml，colors.xml，dimens.xml
-插件源码地址：https://github.com/marcoRS/lint-cleaner-plugin
 
 *****
 
