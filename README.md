@@ -3,7 +3,9 @@ Settings → Plugins → Browse repositories，搜索插件名然后安装。
  
 安装分为在线安装和本地安装，为了避免出现兼容性问题，推荐在线安装。
 
-# 插件推荐汇总
+# 插件推荐
+
+所有插件均来自：[Android Studio Plugins](http://plugins.jetbrains.com/category/?androidstudio&category_id=all)
 
 ### GsonFormat
 ### GsonFormat是一个快速格式化json数据并可以自动生成实体类的插件，非常实用
@@ -71,6 +73,13 @@ Settings → Plugins → Browse repositories，搜索插件名然后安装。
 
 *****
 
+### Freeline
+### 阿里出品秒级编译工具
+插件下载地址：https://plugins.jetbrains.com/plugin/8615-freeline-plugin
+
+![](http://qiniu.apkfuns.com/54F6776E-B1A4-4693-8858-53E030DD9312.png)
+
+*****
 
 
 
