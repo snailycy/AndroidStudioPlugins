@@ -73,7 +73,7 @@ Settings → Plugins → Browse repositories，搜索插件名然后安装。
 
 *****
 
-### Freeline
+### Freeline Plugin
 ### 阿里出品秒级编译工具
 插件下载地址：https://plugins.jetbrains.com/plugin/8615-freeline-plugin
 
@@ -81,11 +81,120 @@ Settings → Plugins → Browse repositories，搜索插件名然后安装。
 
 *****
 
+### pomodoro-tm
+### 番茄工作法的 Android Studio / IDEA 插件
+插件下载地址：https://plugins.jetbrains.com/plugin/4954-pomodoro-tm
+
+插件源码地址：https://github.com/dkandalov/pomodoro-tm
+
+![](https://raw.githubusercontent.com/dkandalov/pomodoro-tm/master/widget.png)
+
+*****
 
 
+### Material Theme UI
+### MD 风格主题
+插件下载地址：https://plugins.jetbrains.com/plugin/8006-material-theme-ui
+
+插件源码地址：https://github.com/ChrisRM/material-theme-jetbrains
+
+![](https://plugins.jetbrains.com/files/8006/screenshot_17032.png)
+
+*****
 
 
+### Android DPI Calculator
+### DPI快速计算工具
+插件下载地址：https://plugins.jetbrains.com/plugin/7832-android-dpi-calculator
+
+插件源码地址：https://github.com/JerzyPuchalski/Android-DPI-Calculator
+
+![](https://plugins.jetbrains.com/files/7832/screenshot_15115.png)
+
+*****
 
 
+### intellij-translation
+### 一款将英文翻译为中文的插件
+插件下载地址：https://plugins.jetbrains.com/plugin/8445-intellij-translation
+
+插件源码地址：https://github.com/zyuyou/intellij-translation
+
+![](https://plugins.jetbrains.com/files/8445/screenshot_15973.png)
+
+*****
 
 
+### Android Methods Count
+### 展示安卓依赖库里方法数
+插件下载地址：https://plugins.jetbrains.com/plugin/8076-android-methods-count
+
+![](https://plugins.jetbrains.com/files/8076/screenshot_15509.png)
+
+*****
+
+
+### Genymotion
+### 可能是目前位置速度最快，运行最流畅的安卓模拟器
+插件下载地址：https://www.genymotion.com/#!/download
+
+![](https://www.genymotion.com/wp-content/uploads/2016/09/screenshot_gmdesktop.jpg)
+
+*****
+
+
+### Android Drawable Importer
+### 最常用的功能就是生成不同尺寸的图标
+插件下载地址：https://plugins.jetbrains.com/plugin/7658-android-drawable-importer
+
+插件源码地址：https://github.com/winterDroid/android-drawable-importer-intellij-plugin
+
+![](https://plugins.jetbrains.com/files/7658/screenshot_15533.png)
+
+*****
+
+
+### lint-cleaner-plugin
+### 清除项目中的无用资源
+
+源码地址：https://github.com/marcoRS/lint-cleaner-plugin
+
+
+Apply the plugin in your `build.gradle`:
+
+```groovy
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.12.+'
+    classpath 'com.droidtitan:lint-cleaner-plugin:0.3.0'
+  }
+}
+
+apply plugin: 'android'
+apply plugin: 'com.droidtitan.lintcleaner'
+```
+
+
+Finally, to remove unused resources use: 
+     
+    gradle lintClean
+
+## Optional Configuration using DSL
+
+```groovy
+lintCleaner {
+    // Exclude specific files
+    exclude = ['com_crashlytics_export_strings.xml','config.xml']
+
+    // Ability to ignore all resource files. False by default. 
+    ignoreResFiles = true
+    
+    // Default path is build/outputs/lint-results.xml
+    lintXmlFilePath = 'path/to/lint-results.xml'
+}
+```
+
+*****
